@@ -649,7 +649,8 @@ h4 {
   letter-spacing: 2px;
 }
 
-.footer-contact a {
+.footer-contact a,
+.footer-contact .footer-link-static {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -659,11 +660,17 @@ h4 {
   font-size: 1rem;
 }
 
-.footer-contact a:hover {
+.footer-contact a:hover,
+.footer-contact .footer-link-static:hover {
   color: white;
 }
 
-.footer-contact a i {
+.footer-contact .footer-link-static {
+  cursor: default;
+}
+
+.footer-contact a i,
+.footer-contact .footer-link-static i {
   color: var(--color-gold);
 }
 

@@ -1,213 +1,314 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodrigues Eleotério | Advocacia Trabalhista</title>
-    <link rel="icon" type="image/png" href="9d16da.png">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Advocacia Trabalhista Especializada | Orientação Jurídica</title>
+    <meta name="description"
+        content="Escritório de advocacia trabalhista com atuação técnica e ética para empregados e empregadores. Orientação jurídica responsável.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
-    <style>
-        :root {
-            --gold: #d4af37;
-            --dark: #0a0a0a;
-            --white: #ffffff;
-            --gray: #f4f4f4;
-            --green: #25d366;
-        }
-
-        body {
-            font-family: 'Outfit', sans-serif;
-            margin: 0;
-            background-color: var(--dark);
-            color: var(--white);
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header */
-        header {
-            padding: 20px 0;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo h1 {
-            color: var(--gold);
-            margin: 0;
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .oab-text {
-            font-size: 0.8rem;
-            color: #888;
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 80px 0;
-            text-align: center;
-            background: radial-gradient(circle at top, #1a1a1a 0%, #0a0a0a 100%);
-        }
-
-        .text-gold { color: var(--gold); }
-
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 15px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .btn-primary-green {
-            background-color: var(--green);
-            color: white;
-        }
-
-        .btn-primary-green:hover { transform: scale(1.05); }
-
-        /* Services */
-        .services {
-            padding: 60px 0;
-            background-color: #111;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .service-column {
-            background: #1a1a1a;
-            padding: 30px;
-            border-radius: 10px;
-            border-top: 3px solid var(--gold);
-        }
-
-        .service-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .service-list li {
-            margin-bottom: 15px;
-            display: flex;
-            gap: 10px;
-        }
-
-        .service-list i { color: var(--gold); }
-
-        /* Footer */
-        footer {
-            padding: 40px 0;
-            background: #000;
-            text-align: center;
-            border-top: 1px solid #222;
-        }
-
-        .footer-contact {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin: 20px 0;
-        }
-
-        .footer-contact a, .footer-link-static {
-            color: var(--gold);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        @media (max-width: 768px) {
-            .services-grid { grid-template-columns: 1fr; }
-            .hero h2 { font-size: 1.8rem; }
-        }
-    </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+
+    <!-- Header / Nav -->
+    <header class="header">
+        <div class="container header-container">
             <div class="logo">
-                <h1>Rodrigues Eleotério</h1>
-                <span class="oab-text">Soluções em Direito do Trabalho</span>
+                <span class="logo-icon"><i class="ri-government-line"></i></span>
+                <div class="logo-text">
+                    <h1>Rodrigues Eleotério</h1>
+                    <span class="oab-text">Soluções em Direito do Trabalho</span>
+                </div>
             </div>
-            <a href="https://wa.me/5511940168349" class="btn" style="border: 1px solid #d4af37; color: #d4af37; padding: 8px 15px;">
+            <!-- WhatsApp Button Header -->
+            <a href="https://wa.me/5511940168349" class="btn btn-outline-gold" target="_blank"
+                rel="noopener noreferrer">
                 <i class="ri-whatsapp-line"></i> Contato
             </a>
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-bg-shapes">
+            <!-- Shapes replaced by CSS gradients in stylesheet -->
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h2 class="hero-title reveal-text">
+                    Direito do Trabalho com <br>
+                    <span class="text-gold">Informação, Técnica e Responsabilidade</span>
+                </h2>
+                <p class="hero-subtitle fade-in">
+                    Conteúdo claro e orientação jurídica trabalhista especializada para empregados e empregadores.
+                </p>
+                <div class="hero-cta fade-in delay-1">
+                    <a href="https://wa.me/5511940168349" class="btn btn-primary-green">
+                        <i class="ri-whatsapp-line"></i> Falar com um advogado pelo WhatsApp
+                    </a>
+                    <p class="ethical-note">
+                        <i class="ri-information-line"></i> Atendimento inicial para esclarecimento de dúvidas
+                        jurídicas.
+                    </p>
+                </div>
+            </div>
+            <div class="hero-image fade-in delay-2">
+                <img src="hero-image.jpg" alt="Advogado Rodrigues Eleotério">
+            </div>
+        </div>
+    </section>
+
+    <!-- Atuação / Services -->
+    <section class="services section-padding">
         <div class="container">
-            <h2>Direito do Trabalho com <br>
-            <span class="text-gold">Técnica e Responsabilidade</span></h2>
-            <p style="color: #ccc; max-width: 700px; margin: 0 auto 30px;">Conteúdo claro e orientação jurídica trabalhista especializada para empregados e empregadores.</p>
-            <a href="https://wa.me/5511940168349" class="btn btn-primary-green">
-                <i class="ri-whatsapp-line"></i> Falar pelo WhatsApp
+            <div class="section-header fade-up">
+                <h3>Áreas de Atuação</h3>
+                <p>Orientação técnica baseada na legislação vigente.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Column: Empregados -->
+                <div class="service-column fade-up">
+                    <div class="column-header">
+                        <i class="ri-briefcase-line"></i>
+                        <h4>Para Empregados</h4>
+                    </div>
+                    <ul class="service-list">
+                        <li>
+                            <i class="ri-logout-box-r-line"></i>
+                            <span><strong>Rescisão Indireta:</strong> Saia do emprego com todos os seus direitos
+                                garantidos quando a empresa descumpre o contrato ou as normas de segurança.</span>
+                        </li>
+                        <li>
+                            <i class="ri-first-aid-kit-line"></i>
+                            <span><strong>Doenças e Acidentes Ocupacionais:</strong> Proteção e indenização para
+                                trabalhadores que sofreram lesões ou adquiriram doenças devido às condições de
+                                trabalho.</span>
+                        </li>
+                        <li>
+                            <i class="ri-article-line"></i>
+                            <span><strong>Verbas e Vínculo Empregatício:</strong> Reconhecimento de registro em carteira
+                                para "Falsos PJs" e cobrança de horas extras, comissões e reflexos salariais.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column: Empregadores -->
+                <div class="service-column fade-up delay-1">
+                    <div class="column-header">
+                        <i class="ri-building-4-line"></i>
+                        <h4>Para Empregadores</h4>
+                    </div>
+                    <ul class="service-list">
+                        <li>
+                            <i class="ri-shield-check-line"></i>
+                            <span><strong>Auditoria e Prevenção de Riscos:</strong> Identificação proativa de falhas na
+                                gestão de pessoas para evitar processos trabalhistas e multas administrativas.</span>
+                        </li>
+                        <li>
+                            <i class="ri-scales-3-line"></i>
+                            <span><strong>Defesa em Ações Estratégicas:</strong> Representação técnica em processos de
+                                alto valor, focando na proteção do patrimônio e redução de condenações.</span>
+                        </li>
+                        <li>
+                            <i class="ri-file-list-3-line"></i>
+                            <span><strong>Adequação à Legislação:</strong> Consultoria para elaboração de contratos
+                                seguros, bancos de horas e políticas internas em conformidade com a Reforma
+                                Trabalhista.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section class="process section-padding bg-contrast">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h3>Como Funciona o Atendimento</h3>
+                <p>Atendimento presencial em São Paulo e suporte jurídico em todo o território nacional.</p>
+            </div>
+
+            <div class="process-steps">
+                <!-- Step 1 -->
+                <div class="step-card fade-up">
+                    <div class="step-icon">
+                        <i class="ri-whatsapp-line"></i>
+                    </div>
+                    <h4>Análise de Viabilidade</h4>
+                    <p>Envie uma mensagem descrevendo seu caso para que nossa equipe técnica identifique seus direitos e
+                        a melhor forma de agir.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step-card fade-up delay-1">
+                    <div class="step-icon">
+                        <i class="ri-file-search-line"></i>
+                    </div>
+                    <h4>Estratégia Personalizada</h4>
+                    <p>Realizamos uma consulta detalhada para alinhar os objetivos, organizar provas e definir o plano
+                        de ação jurídica.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-card fade-up delay-2">
+                    <div class="step-icon">
+                        <i class="ri-guide-line"></i>
+                    </div>
+                    <h4>Defesa Ativa e Segurança</h4>
+                    <p>Protocolamos sua ação com rigor técnico e cuidamos de todos os trâmites legais, mantendo você
+                        sempre atualizado para que tenha total tranquilidade enquanto buscamos o seu direito.</p>
+                </div>
+            </div>
+
+            <div class="center-text fade-up">
+                <div class="process-note">
+                    <i class="ri-check-double-line"></i> Atendimento profissional, ético e acessível.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Differentials -->
+    <section class="differentials section-padding">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h3>Nossos Pilares</h3>
+                <p>Atuação pautada na ética e na técnica jurídica.</p>
+            </div>
+
+            <div class="diff-grid">
+                <div class="diff-card fade-up">
+                    <i class="ri-honour-line"></i>
+                    <h4>Atuação Técnica</h4>
+                    <p>Foco na legislação atualizada e jurisprudência recente.</p>
+                </div>
+                <div class="diff-card fade-up delay-1">
+                    <i class="ri-translate-2"></i> <!-- Represents clear language -->
+                    <h4>Linguagem Acessível</h4>
+                    <p>Explicamos o direito de forma que você entenda.</p>
+                </div>
+                <div class="diff-card fade-up delay-2">
+                    <i class="ri-smartphone-line"></i>
+                    <h4>Atendimento Digital</h4>
+                    <p>Agilidade e organização através do WhatsApp.</p>
+                </div>
+                <div class="diff-card fade-up delay-3">
+                    <i class="ri-shield-keyhole-line"></i>
+                    <h4>Sigilo e Ética</h4>
+                    <p>Compromisso total com as normas da OAB.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section-padding bg-contrast">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h3>Dúvidas Frequentes</h3>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item fade-up">
+                    <button class="accordion-header">
+                        Tenho medo de represálias. Meu nome fica "sujo" se eu processar?
+                        <i class="ri-arrow-down-s-line"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <p>Não. O processo trabalhista é um direito constitucional. Atuamos com total sigilo e ética
+                            para proteger sua imagem e sua carreira profissional.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item fade-up">
+                    <button class="accordion-header">
+                        Atendem empresas de qualquer porte?
+                        <i class="ri-arrow-down-s-line"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <p>Sim. Nossa consultoria preventiva e defesa estratégica atendem desde microempreendedores até
+                            empresas de médio porte que buscam segurança jurídica.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item fade-up">
+                    <button class="accordion-header">
+                        Não estou na mesma cidade que o escritório, como serei atendido?
+                        <i class="ri-arrow-down-s-line"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <p>Realizamos atendimentos por videoconferência e WhatsApp em todo o Brasil. A tecnologia nos
+                            permite atuar com máxima proximidade e eficiência em qualquer estado, garantindo agilidade
+                            no seu caso.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item fade-up">
+                    <button class="accordion-header">
+                        Fui demitido ou saí da empresa, quanto tempo tenho para buscar meus direitos?
+                        <i class="ri-arrow-down-s-line"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <p>Você tem o prazo de até 2 anos após o desligamento para entrar com a ação, podendo
+                            reivindicar verbas dos últimos 5 anos. Não deixe para a última hora e corra o risco de
+                            perder o que é seu por direito.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-section section-padding">
+        <div class="cta-bg-overlay"></div>
+        <div class="container cta-content fade-up">
+            <h2>Esclareça sua situação trabalhista com orientação profissional</h2>
+            <p>Atendimento direcionado à análise de riscos e preservação de garantias trabalhistas.</p>
+            <a href="https://wa.me/5511940168349" class="btn btn-primary-green btn-large">
+                <i class="ri-whatsapp-line"></i> Conversar pelo WhatsApp
             </a>
         </div>
     </section>
 
-    <section class="services">
-        <div class="container">
-            <h3 style="text-align: center; color: var(--gold);">Áreas de Atuação</h3>
-            <div class="services-grid">
-                <div class="service-column">
-                    <h4>Para Empregados</h4>
-                    <ul class="service-list">
-                        <li><i class="ri-check-line"></i> <span>Rescisão Indireta</span></li>
-                        <li><i class="ri-check-line"></i> <span>Doenças e Acidentes Ocupacionais</span></li>
-                        <li><i class="ri-check-line"></i> <span>Verbas e Vínculo Empregatício</span></li>
-                    </ul>
-                </div>
-                <div class="service-column">
-                    <h4>Para Empregadores</h4>
-                    <ul class="service-list">
-                        <li><i class="ri-check-line"></i> <span>Auditoria e Prevenção de Riscos</span></li>
-                        <li><i class="ri-check-line"></i> <span>Defesa em Ações Estratégicas</span></li>
-                        <li><i class="ri-check-line"></i> <span>Adequação à Legislação</span></li>
-                    </ul>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h4>RODRIGUES ELEOTÉRIO</h4>
+                <p>Escritório comprometido com a ética e a justiça.</p>
+                <div class="footer-contact">
+                    <a href="https://wa.me/5511940168349"><i class="ri-whatsapp-line"></i> (11) 94016-8349</a>
+                    <a href="https://instagram.com/victorodrigues_adv" target="_blank" rel="noopener noreferrer"><i
+                            class="ri-instagram-line"></i> @victorodrigues_adv</a>
+                    <div class="footer-link-static"><i class="ri-mail-line"></i>
+                        victor@rodrigueseleoterio.adv.br</div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <h4>RODRIGUES ELEOTÉRIO</h4>
-            <div class="footer-contact">
-                <a href="https://wa.me/5511940168349"><i class="ri-whatsapp-line"></i> (11) 94016-8349</a>
-                <a href="https://instagram.com/victorodrigues_adv" target="_blank"><i class="ri-instagram-line"></i> @victorodrigues_adv</a>
-                <div class="footer-link-static"><i class="ri-mail-line"></i> victor@rodrigueseleoterio.adv.br</div>
+            <div class="footer-legal">
+                <p>&copy; 2026 Advocacia Trabalhista. Todos os direitos reservados.</p>
+                <p class="legal-disclaimer">Este site tem caráter meramente informativo e respeita as normas de
+                    publicidade da OAB. Não promete resultados e não capta clientela indevidamente.</p>
             </div>
-            <p style="font-size: 0.7rem; color: #555;">&copy; 2026 Rodrigues Eleotério. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -301,18 +301,30 @@ h4 {
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
-  color: var(--text-secondary);
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.8);
   border-left: 3px solid var(--color-gold);
   padding-left: 25px;
+  margin-top: 10px;
   margin-bottom: 50px;
   font-weight: 300;
   max-width: 700px;
 }
 
 .hero-cta {
-  padding-left: 25px;
-  /* Align with border-left line */
+  margin-left: 0 !important; 
+  text-align: left;
+  display: block; 
+}
+
+.hero-cta .btn {
+  display: inline-flex !important; 
+  width: fit-content;
+  margin-left: 0 !important; 
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 16px 36px !important;
+  text-align: center !important; 
 }
 
 .ethical-note {
@@ -557,6 +569,16 @@ h4 {
 }
 
 /* FAQ - Minimal Elegant */
+/* FAQ Specific Spacing Adjustments */
+.faq.section-padding {
+  padding-top: 60px; /* Reduced to eliminate the gap and fit inside the red boundary */
+}
+
+.faq .section-header {
+  margin-bottom: 30px; /* Moves the accordion closer to the title */
+}
+
+/* FAQ - Minimal Elegant */
 .accordion-item {
   background: transparent;
   border-bottom: 1px solid var(--border-subtle);
@@ -778,13 +800,25 @@ h4 {
     width: 100%;
   }
 
+  .oab-text {
+    font-size: 0.6rem;
+    letter-spacing: 1.5px;
+  }
+
   /* Button: 100% Width */
   .header-container .btn {
     display: flex !important;
     width: 100% !important;
     margin: 5px 0 0 0 !important;
     justify-content: center;
-    font-size: 0.9rem;
+    font-size: 0.85rem !important;
+    padding: 12px 14px !important;
+  }
+
+  .btn {
+    padding: 14px 18px !important;
+    font-size: 0.85rem !important;
+    letter-spacing: 1px !important;
   }
 
   /* --- HERO SECTION --- */
